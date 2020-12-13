@@ -130,7 +130,7 @@ int main (int argc, char *argv[])
 	
 	SDL_Init(SDL_INIT_VIDEO | SDL_INIT_JOYSTICK);
 	SDL_ShowCursor(0);
-	sdl_screen = SDL_SetVideoMode(320, 240, 16, SDL_HWSURFACE | SDL_TRIPLEBUF);
+	sdl_screen = SDL_SetVideoMode(0, 0, 16, SDL_HWSURFACE | SDL_TRIPLEBUF);
 	if (!sdl_screen)
 	{
 		printf("Can't set video mode\n");
