@@ -302,12 +302,8 @@ int main (int argc, char *argv[])
 	
 	if (update_clock == 1)
 	{
-		/* Parse our selected year, month, hour... to final_long_string so it can then be executed. */
-		snprintf(final_long_string, sizeof(final_long_string), "date -s '%d-%d-%d %d:%d:%d'", year_selected, month_selected, date_selected, hour_selected, minute_selected, seconds_selected);
-		
-		/* Executes the command to update both the system clock & the hardware clock if available */
+		snprintf(final_long_string, sizeof(final_long_string), "date -s '%d-%d-%d %d:%d:%d';hwclock --utc -w", year_selected, month_selected, date_selected, hour_selected, minute_selected, seconds_selected);
 		execlp("/bin/sh","/bin/sh", "-c", final_long_string, (char *)NULL);
-		execlp("/bin/sh","/bin/sh", "-c", "hwclock --utc -w", (char *)NULL);
 	}
 	
 	return 0;
