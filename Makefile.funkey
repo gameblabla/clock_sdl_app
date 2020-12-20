@@ -2,7 +2,7 @@ PRGNAME     = test.elf
 CC			= /opt/funkey-toolchain/usr/bin/arm-linux-gcc
 
 OBJS		= main.o font/font_drawing.o
-CFLAGS		= -Os -I. -Ifont
+CFLAGS		= -Os -std=gnu99 -I. -Ifont
 LDFLAGS     =  -lc -lgcc -lm -lSDL -lasound
 
 
