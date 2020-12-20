@@ -17,7 +17,7 @@ Download this toolchain :
 http://www.gcw-zero.com/files/opendingux-gcw0-toolchain.2014-08-20.tar.bz2
 
 And extract it to /opt.
-In /opt/gcw0-toolchain, you should have a following folder called "usr". If that's the case, you're good.
+In /opt/gcw0-toolchain, you should have the following folder called "usr". If that's the case, you're good.
 
 Then open up a terminal in this folder and compile it with :
 make -f Makefile.gcw0
@@ -36,7 +36,7 @@ Download this toolchain :
 http://od.abstraction.se/opendingux/opendingux-gcw0-toolchain.2020-10-01.tar.gz
 
 And extract it to /opt.
-In /opt/gcw0-toolchain, you should have the following files:
+In /opt/gcw0-toolchain, you should have the following files and folders:
 bin
 etc
 include
